@@ -1,0 +1,68 @@
+temperatures = [20,21,22,25,30,30,31,15]     
+
+avgTemperature = sum(temperatures) / len(temperatures)
+
+print("The average Temperature is ",  avgTemperature)
+
+for temperature in temperatures:
+    if temperature >=avgTemperature:
+        print(temperature, "is above average")
+    else:
+        print(temperature, "is below average") 
+
+grades
+names = ["Ann","Bob","Carl","Dana","Eve","Fred"]
+grades = [70,90,55,65,87,100]
+
+
+class_average = sum (average) / 6
+print ("The class average is ", class average)
+passed = (grade for grade in averages if grade >=70)
+percentage_passed = (len(passed) / len(averages)) * 100
+print ("Percentages of students who passed:", percentage_passed)
+
+
+items = ["milk", "eggs", "bread"]
+bought = [False, True, False]
+
+print("To buy:", [x for x, b in zip(items, bought) if not b])
+
+for i in range(len(items)):
+    if not bought[i]:
+        if input(f"Bought {items[i]}? ").lower().startswith("y"):
+            bought[i] = True
+
+print("Updated:", list(zip(items, bought)))
+
+
+nums = [42, 7, 19, 100, 3, 58]
+print("Numbers:", nums)
+print("Max:", max(nums)) 
+print("Min:", min(nums))
+print("arranged:", sorted(nums))
+print()
+
+
+
+nums2 = [1,2,3,4,10,15,22]
+
+evens = []
+odds = []
+for x in nums2:
+    if x % 2 == 0:
+        evens.append(x)
+    else:
+        odds.append(x)
+
+print("Evens:", evens)
+print("Odds:", odds)
+
+
+
+users = ["admin", "guest"]
+new_user = "user3"
+
+if new_user not in users:
+    users.append(new_user)
+
+print("Users:", users)
